@@ -17,7 +17,7 @@ public class TestUtils {
             return lines.toList();
         } catch (Exception e) {
             System.err.println("Error while reading file");
-            return null;
+            throw new RuntimeException();
         }
     }
 }
